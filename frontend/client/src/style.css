@@ -1,0 +1,167 @@
+/* Global Variables */
+:root{
+    --dark: #000;
+    --white: #fff;
+    --navbar-color: #133E87;
+    --table-header-color: #CBDCEB;
+    --delete-btn-color: #E72929;
+    --edit-btn-color: #019267;
+    --view-btn-color: #362FD9;
+    --logo-font-size: 30px;
+    --menu-item-font-size: 20px;
+    --btn-input-font-size: 15px;
+}
+
+body{
+    background-color: var(--white);
+    margin: 0;
+}
+
+.div-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 30px;
+    background-color: var(--navbar-color);
+    margin-bottom: 80px;
+}
+
+.navbar__menu{
+    display: flex;
+    gap: 25px;
+}
+
+.navbar__menu__item{
+    font-size: var(--menu-item-font-size);
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navbar__menu__item.active{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+.navbar__logo{
+    font-size: var(--logo-font-size);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--white);
+}
+
+/* Table */
+.table{
+    width: 900px;
+    border-collapse: collapse;
+}
+
+.table__thead{
+    background-color: var(--table-header-color);
+}
+
+th, td{
+    padding: 10px;
+    border: 1px solid var(--dark);
+    text-align: center;
+}
+
+/* Button */
+.btn{
+    padding: 10px 20px;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    background-color: var(--dark);
+    cursor: pointer;
+    font-size: var(--btn-input-font-size);
+    font-weight: 200;
+    font-style: normal;
+    color: var(--white);
+}
+
+.btn-view{
+    background-color: var(--view-btn-color);
+    border: none;
+}
+
+.btn-edit{
+    background-color: var(--edit-btn-color);
+    border: none;
+}
+
+.btn-delete{
+    background-color: var(--delete-btn-color);
+    border: none;
+}
+
+.btn-view:hover,
+.btn-edit:hover,
+.btn-delete:hover,
+.btn:hover{
+    opacity: 0.7;
+}
+
+.div-btn{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+} 
+
+/* Input */
+.input{
+    width: 600px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    font-size: var(--btn-input-font-size);
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Form */
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.form__btn{
+    width: 620px;
+}
+
+/* React Icons */
+.icon{
+    color: var(--navbar-color);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* NotFound */
+.not-found {
+    text-align: center;
+    padding: 50px;
+    color: var(--dark);
+}
+
+.not-found__h1{
+    font-size: 100px;
+    margin: 0;
+    color: #e40000;
+}
+
+.not-found__p{
+    font-size: 18px;
+    margin: 20px 0;
+}
